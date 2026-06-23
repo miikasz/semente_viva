@@ -260,12 +260,3 @@ formContato.addEventListener('submit', function(event) {
   }
 });
 
-const linkPitch = document.getElementById('linkPitch');
-
-if (linkPitch) {
-    linkPitch.addEventListener('click', function(event) {
-        if (linkPitch.getAttribute('href') === '#') {
-            event.preventDefault();
-        }
-    });
-}
