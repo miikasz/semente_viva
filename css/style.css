@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+:root {
+  --verde-medio: #00570d;
+}
+
+body{
+    background-image:
+            radial-gradient(circle at 15% 25%, rgba(0, 200, 10, 0.3), transparent 40%),
+            radial-gradient(circle at 85% 20%, rgba(100, 221, 23, 0.39), transparent 45%),
+            radial-gradient(circle at 50% 85%, rgba(155, 255, 89, 0.44), transparent 50%);
+    background-size: cover;
+
+
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: darkgreen;
+    padding: 20px;
+  }
+
+p {
+  color: #002506;
+  font-size: 1.1rem;
+  font-family: "lato", sans-serif;
+}
+
+  .navbar {
+      border-top: 7px solid;
+    border-bottom: 3px solid;
+      border-image: linear-gradient(to right, #00570c, #559600, #00570c) 1;
+    background-image: linear-gradient(to right, #c8f4cb, rgb(229, 249, 219), #cff5b7);
+    background-size: cover;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    font-size: .8rem;
+    font-weight: 800;
+
+
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    transform: scale(.6);
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
+
+  .navbar-toggler:hover {
+    transition: opacity;
+    background-color: rgba(255, 255, 255, 0.53);
+    box-shadow: 0 0 .1rem 0.1rem rgb(119, 212, 0);
+  }
+
+  .navbar-toggler:focus {
+    border: none;
+    box-shadow: 0 0 0 0.1rem rgb(119, 212, 0);
+  }
+
+
+  .navbar .nav-link {
+    position: relative;
+    color: #00570d;
+    transition: transform 0.3s ease, border-bottom 0.3s ease;
+
+  }
+
+  .navbar .nav-link:hover{
+    transform: scale(1.1);
+    border-bottom: #77d400 2px solid;
+  }
+  .navbar .nav-link.active {
+    transform: scale(1.1);
+    border-bottom: #77d400 2px solid;
+  }
+
+  .navbar-brand {
+    margin-top: 1rem;
+  }
+
+  .line {
+
+    width: 25%;
+    height: 4px;
+    background-image: linear-gradient(to right, #00570c, #559600, #00570c);
+  z-index: 5;
+    margin: 60px auto;
+  }
+
+  header {
+   padding-top: 8rem;
+
+  }
+
+  .btn {
+    background-image: linear-gradient(to bottom right, #ffffff, #c0f0b2);
+    font-family: "Lato", sans-serif;
+    color: #006400;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: block;
+    max-width: 180px;
+    font-size:1rem;
+    margin: 10px auto;
+    z-index: 3;
+
+  }
+
+  .btn:hover {
+    background-image: linear-gradient(to bottom right, rgba(20, 66, 3, 0.74), #002905);
+    transform: scale(1.08);
+    transition-duration: 0.6s;
+  color: #def7d1;
+
+  }
+
+  .produto-card img {
+    border-radius: 5%;
+  }
+
+  #particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.71), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(0, 87, 13, 0.5));
+    position: fixed;
+    z-index: -1;
+  }
+
+  #home{
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(192, 240, 178, 0));
+  }
+
+  .home img {
+    z-index: 2;
+  }
+
+.produto-card {
+  width: 240px;
+  min-height: 340px;
+}
+
+.produto-img {
+  height: 140px;
+  object-fit: cover;
+}
+
+.produto-titulo {
+  font-size: .95rem;
+  font-weight: 700;
+  color: #006400;
+  min-height: 45px;
+}
+
+.produto-texto {
+  font-size: .8rem;
+  min-height: 60px;
+}
+
+.produto-card .btn {
+  font-size: .8rem;
+  padding: 8px;
+}
+
+.IAeClima > .container > .row > .clima-box h1 {
+  font-size: 1.5rem;
+  color: #006400;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.IAeClima > .container > .row > .clima-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.clima-forma {
+  border: 4px solid #173f1f;
+  border-radius: 25px;
+  padding: 18px;
+  background: rgba(255,255,255,0.35);
+}
+
+.clima-forma .form-control {
+  border: none;
+  border-radius: 18px;
+  padding: 16px;
+  height: 54px;
+  background: #f0f0f0;
+  font-size: 1rem;
+}
+
+.clima-forma .btn {
+  background: #1f5a32;
+  color: white;
+  border-radius: 18px;
+  padding: 14px;
+  font-weight: 700;
+  border: none;
+  max-width: 100%;
+}
+
+.clima-forma .btn:hover {
+  background: #184728;
+}
+
+.card-tempo {
+  background: linear-gradient(to right, #032b12, #05381a);
+  color: white;
+  border-radius: 30px;
+  padding: 30px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temperatura {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  margin: 0;
+  line-height: 1;
+}
+
+.card-tempo p:last-child {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.card-alerta {
+  background: #efe3d4;
+  border-radius: 30px;
+  padding: 25px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-alerta h1 {
+  color: #082b12;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.card-alerta p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card-ia {
+  background: rgba(220, 224, 220, 0.8);
+  border: 1px solid #c7d3c7;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.card-ia h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  color: #082b12;
+}
+
+.card-ia p {
+  font-size: 1rem;
+}
+
+.card-ia .btn {
+  background: #1f5a32;
+  color: white;
+  border-radius: 15px;
+  padding: 12px 22px;
+}
+
+.card-ia .btn:hover {
+  background: #184728;
+}
+
+@media (max-width: 991px) {
+
+  section {
+    padding: 2rem 0;
+  }
+
+  .line {
+    width: 50%;
+    height: 2px;
+    margin: 20px auto;
+  }
+
+  #logo {
+    height: 45px;
+  }
+
+  .IAeClima > .container > .row > .clima-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .IAeClima > .container > .row > .clima-box p {
+    font-size: .95rem;
+  }
+
+  .temperatura {
+    font-size: 4rem;
+  }
+
+  .card-alerta h1,
+  .card-ia h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-alerta,
+  .card-tempo {
+    height: auto;
+  }
+
+}
+
+#home + section .btn {
+  margin-top: 35px;
+}
+
+/* Ajustes form e responsividade */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 95px;
+}
+
+.btn-pitch {
+  max-width: 210px;
+}
+
+.sub {
+  line-height: 1.6;
+}
+
+.carrinho-box,
+.contato-form {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 87, 13, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 87, 13, 0.10);
+}
+
+.contato-form {
+  border-radius: 30px;
+  padding: 28px;
+}
+
+.contato-form .form-label {
+  color: #00570d;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
+}
+
+.contato-form .form-control,
+.contato-form .form-select {
+  border-radius: 15px;
+  border: 1px solid #bad6ba;
+  padding: 12px 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.contato-form .form-control:focus,
+.contato-form .form-select:focus {
+  border-color: #559600;
+  box-shadow: 0 0 0 0.2rem rgba(85, 150, 0, 0.18);
+}
+
+.contato-form .invalid-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.carrinho-box ul {
+  color: #002506;
+}
+
+.usabilidade .card,
+#semente .card {
+  transition: transform 0.3s ease;
+}
+
+.usabilidade .card:hover,
+#semente .card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 1.25rem;
+    padding: 12px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .produto-card {
+    width: 100%;
+  }
+
+  .contato-form {
+    padding: 20px;
+  }
+}
